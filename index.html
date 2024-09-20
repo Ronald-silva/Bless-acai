@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bless Açaí e Sorvete</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header class="text-center mb-6">
+            <div class="divlogo"><img id="logo" src="img/logo bless acai.jpg" alt="logo-bless-acai"></div>
+            <p class="text-sm text-purple-600">Rua Julio Verne, 608, Fortaleza, Brasil</p>
+            <p class="text-sm text-purple-600">Segunda a domingo, 18:00 - 22:30</p>
+        </header>
+
+        <div id="cart-icon" class="cart-icon">
+            <span id="cart-count" class="cart-count">0</span>
+            🛒
+        </div>
+
+        <div id="cart" class="cart hidden">
+            <h3 class="text-lg font-semibold mb-2">Seu Carrinho</h3>
+            <div id="cart-items"></div>
+            <div class="mt-2 font-semibold">Total: R$<span id="total-price">0.00</span></div>
+        </div>
+
+        <nav class="flex">
+            <a href="https://wa.me/+5585991993833" class="flex items-center text-purple-700">
+                <img id="whats" src="img/whatsapp-bless.svg" alt="icone-whatsApp">WhatsApp
+            </a>
+            <a href="https://instagram.com/blessacaisorvete" target="_blank" rel="noopener noreferrer" class="flex items-center text-purple-700">
+                <img id="whats" src="img/instagram-brands-solid.svg" alt="icone-instagram">Siga-nos!
+            </a>
+        </nav>
+
+        <section class="mb-6">
+            <h2 class="text-2xl font-semibold mb-4 text-purple-800">Menu</h2>
+            <div id="product-list">
+                <!-- Produtos serão inseridos aqui via JavaScript -->
+            </div>
+        </section>
+
+        <section class="mb-6">
+            <h2 class="text-2xl font-semibold mb-4 text-purple-800">Tipo de Pedido</h2>
+            <select id="order-type" class="w-full">
+                <option value="">Selecione o tipo de pedido</option>
+                <option value="Pegar na Loja">Pegar na Loja</option>
+                <option value="Entrega a Domicílio">Entrega a Domicílio</option>
+            </select>
+            <div id="delivery-info" class="mt-2 hidden">
+                <input type="text" id="customer-address" placeholder="Endereço de Entrega" class="p-2 w-full border rounded">
+            </div>
+        </section>
+
+        <section class="mb-6">
+            <h2 class="text-2xl font-semibold mb-4 text-purple-800">Pagamento</h2>
+            <select id="payment-method" class="w-full">
+                <option value="">Selecione o método de pagamento</option>
+                <option value="Cartão de Crédito">Cartão de Crédito</option>
+                <option value="Cartão de Débito">Cartão de Débito</option>
+                <option value="Pix">Pix</option>
+                <option value="Dinheiro">Dinheiro</option>
+            </select>
+            <div id="cash-change" class="mt-2 hidden">
+                <input type="number" id="change-needed" placeholder="Valor a ser pago" class="p-2 w-full border rounded">
+                <p id="change-info" class="mt-2 text-sm text-purple-700 hidden">O motoboy deverá levar R$<span id="change-to-take">0.00</span> de troco.</p>
+            </div>
+        </section>
+
+        <section class="mb-6">
+            <h2 class="text-2xl font-semibold mb-4 text-purple-800">Informações do Cliente</h2>
+            <input type="text" id="customer-name" placeholder="Nome do Cliente" class="p-2 w-full border rounded mb-2">
+            <input type="tel" id="customer-phone" placeholder="Telefone do Cliente" class="p-2 w-full border rounded">
+        </section>
+
+        <button id="checkout-button" class="w-full bg-purple-600 hover:bg-purple-700 text-white">
+            Finalizar Pedido (R$<span id="checkout-total">0.00</span>)
+        </button>
+
+        <footer class="mt-6 text-center text-sm text-purple-600">
+            <p>© 2024 Bless Açaí e Sorvete. Todos os direitos reservados.</p>
+        </footer>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

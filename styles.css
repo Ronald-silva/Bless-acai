@@ -26,6 +26,7 @@ body {
     background-color:#8b5cf6;
     padding: 0.3rem;
     border-radius: 4px;
+    
 
 }
 
@@ -34,6 +35,7 @@ body {
     color: #6b21a8;
     display: block;
     flex-direction: column;
+    font-weight: bold;
     
 }
 .text-center {

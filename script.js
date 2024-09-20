@@ -184,8 +184,8 @@ Troco a ser levado: R$${changeToTake.toFixed(2)}` : ''}
 Tipo de pedido: ${orderType}
 ${orderType === 'Entrega a Domicílio' ? `Endereço de entrega: ${customerAddress}` : 'Pedido será retirado na loja.'}
 
-Nome do Cliente: ${customerName}
-Telefone do Cliente: ${customerPhone}
+Cliente: ${customerName}
+Contato: ${customerPhone}
         `;
 
         // Enviar para o WhatsApp
